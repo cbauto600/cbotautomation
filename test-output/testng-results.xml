@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6152" started-at="2021-01-07T18:01:22Z" finished-at="2021-01-07T18:01:28Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="6152" started-at="2021-01-07T18:01:22Z" finished-at="2021-01-07T18:01:28Z">
+      <class name="com.cbautomate.tests.ChatBotCreationTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="startDriver" is-config="true" duration-ms="19530" started-at="2021-01-07T18:01:03Z" finished-at="2021-01-07T18:01:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="setUpClass" is-config="true" duration-ms="226" started-at="2021-01-07T18:01:22Z" finished-at="2021-01-07T18:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="UserCanRegisterSuccssfully()[pri:1, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="UserCanRegisterSuccssfully" duration-ms="5465" started-at="2021-01-07T18:01:22Z" finished-at="2021-01-07T18:01:28Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[userdata.properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: userdata.properties (The system cannot find the file specified)
+at java.io.FileInputStream.open0(Native Method)
+at java.io.FileInputStream.open(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileInputStream.<init>(Unknown Source)
+at java.io.FileReader.<init>(Unknown Source)
+at com.cbautomate.utilities.BasePageUtils.explicitWait(BasePageUtils.java:50)
+at com.cbautomate.pages.SnatchLandingPage.openRegistrationPageAndLogin(SnatchLandingPage.java:49)
+at com.cbautomate.tests.ChatBotCreationTest.UserCanRegisterSuccssfully(ChatBotCreationTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRegisterSuccssfully -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="screenshotOnFailure" is-config="true" duration-ms="402" started-at="2021-01-07T18:01:28Z" finished-at="2021-01-07T18:01:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRegisterSuccssfully status=FAILURE method=ChatBotCreationTest.UserCanRegisterSuccssfully()[pri:1, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2021-01-07T18:01:28Z" finished-at="2021-01-07T18:01:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.cbautomate.tests.ChatBotCreationTest@1e397ed7]" name="stopDriver" is-config="true" duration-ms="663" started-at="2021-01-07T18:01:28Z" finished-at="2021-01-07T18:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.cbautomate.tests.ChatBotCreationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
