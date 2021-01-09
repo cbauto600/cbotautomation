@@ -3,7 +3,7 @@
 	<parameter name="browser" value="chrome" />
 	<test name="Regression Test" preserve-order="false">
 		<classes>
-			<class name="tests.ChatBotCreationTest" />
+			<class name="com.cbautomate.tests.ChatBotCreationTest" />
 		</classes>
 	</test>
 </suite> 

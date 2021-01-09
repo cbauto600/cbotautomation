@@ -22,6 +22,13 @@ import com.cbautomate.utilities.Helper;
 
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
+/**
+* This class describes Webdriver utilities and its methods.
+*
+* @author Aniruddha Majumdar
+* @since   09/01/2021
+*/
+
 public class WebdriverUtils extends AbstractTestNGCucumberTests
 {
 	public static WebDriver driver ; 
